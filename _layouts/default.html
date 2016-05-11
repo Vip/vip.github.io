@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>VIP</title>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        var elements = ['header', 'nav', 'section', 'article', 'time', 'footer', 'main'];
+        for (var i = 0; i < elements.length; i++) {
+            document.createElement(elements[i]);
+        }
+    </script>
+    <![endif]-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            background-color: #f10582;
+            -webkit-animation: 300s gradient-background infinite;
+            -moz-animation: 300s gradient-background infinite;
+            animation: 300s gradient-background infinite;
+        }
+        body {
+            font: 400 16px/1.65 "open_sanslight", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        @font-face {
+            font-family: 'open_sanslight';
+            src: url('../assets/fonts/opensans-light-webfont.eot');
+            src: url('../assets/fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../assets/fonts/opensans-light-webfont.woff2') format('woff2'),
+            url('../assets/fonts/opensans-light-webfont.woff') format('woff'),
+            url('../assets/fonts/opensans-light-webfont.ttf') format('truetype'),
+            url('../assets/fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        .c-title {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin-left: -50px;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: 300;
+        }
+        @-webkit-keyframes gradient-background {
+            0% {
+                background-color: #f10582;
+            }
+
+            20% {
+                background-color: #E404EC;
+            }
+
+            40% {
+                background-color: #0279DC;
+            }
+
+            60% {
+                background-color: #0CCE01;
+            }
+
+            80% {
+                background-color: #C4B700;
+            }
+
+            100% {
+                background-color: #bf5300;
+            }
+        }
+        @-moz-keyframes gradient-background {
+            0% {
+                background-color: #f10582;
+            }
+
+            20% {
+                background-color: #E404EC;
+            }
+
+            40% {
+                background-color: #0279DC;
+            }
+
+            60% {
+                background-color: #0CCE01;
+            }
+
+            80% {
+                background-color: #C4B700;
+            }
+
+            100% {
+                background-color: #bf5300;
+            }
+        }
+        @keyframes gradient-background {
+            0% {
+                background-color: #f10582;
+            }
+
+            20% {
+                background-color: #E404EC;
+            }
+
+            40% {
+                background-color: #0279DC;
+            }
+
+            60% {
+                background-color: #0CCE01;
+            }
+
+            80% {
+                background-color: #C4B700;
+            }
+
+            100% {
+                background-color: #bf5300;
+            }
+        }
+    </style>
+</head>
+<body>
+    {{ content }}
+</body>
+</html>

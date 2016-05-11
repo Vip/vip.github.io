@@ -1,0 +1,54 @@
+#
+# More configuration examples at:
+# http://jekyllrb.com/docs/configuration/
+#
+
+
+#
+# Jekyll basic configurations
+#
+
+timezoon: Asia/Hong_kong
+permalink: /:title/
+include: ['_pages']
+highlighter: rouge
+
+
+#
+# Setup
+#
+
+title: VIP
+excerpt_separator: <!--more-->
+
+exclude: [
+    README.md
+]
+
+
+#
+# Additional Markdown settings
+#
+
+markdown: kramdown
+kramdown:
+    input: GFM
+
+
+# Assets path used in templates
+assets: /assets
+
+# Sass defined settings
+sass:
+    # Redefine sass root
+    sass_dir: /assets/_scss
+    # Enable minification
+    style: compressed
+
+
+gems:
+- jekyll-redirect-from
+- jekyll-mentions
+- jekyll-sitemap
+- jekyll-feed
+- jemoji
